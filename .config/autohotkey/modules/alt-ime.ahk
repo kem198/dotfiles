@@ -6,7 +6,6 @@
 #Include ../libs/SendKey.ahk
 #Include ../libs/IMEv2.ahk
 
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Alt to switch IME
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -15,10 +14,10 @@
 ; https://ahkscript.github.io/ja/docs/v2/lib/A_MenuMaskKey.htm
 ; https://ahkscript.github.io/ja/docs/v2/lib/Send.htm#blind
 ; https://ahkscript.github.io/ja/docs/v2/Hotkeys.htm#Tilde
-~LAlt::SendKey("{Blind}{vkE8}")
-~RAlt::SendKey("{Blind}{vkE8}")
+~LAlt:: SendKey("{Blind}{vkE8}")
+~RAlt:: SendKey("{Blind}{vkE8}")
 
 ; IME OFF
-LAlt up::IME_SET(0)
+LAlt up:: IME_SET(0)
 ; IME ON
-RAlt up::IME_SET(1)
+RAlt up:: IME_SET(1)

@@ -11,5 +11,6 @@ InstallKeybdHook
 ; Include
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 #include "modules/common.ahk"
-#include "modules/alt-ime.ahk"
+; #include "modules/alt-ime.ahk"
 #include "modules/app.ahk"
+#include "modules/jis.ahk"

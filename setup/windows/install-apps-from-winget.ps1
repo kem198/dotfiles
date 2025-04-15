@@ -19,6 +19,8 @@ function main {
         'Git.Git'
         'Google.Chrome'
         'Google.GoogleDrive'
+        'Google.QuickShare'
+        'Insecure.Npcap' # Wireshark が依存している
         'LINE.LINE'
         'Logitech.OptionsPlus'
         'Microsoft.AzureDataStudio'
@@ -39,6 +41,7 @@ function main {
         'Wacom.WacomTabletDriver'
         'WinMerge.WinMerge'
         'WinSCP.WinSCP'
+        'WiresharkFoundation.Wireshark'
         'xanderfrangos.twinkletray'
     )
 

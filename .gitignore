@@ -29,7 +29,9 @@
 !.config/autohotkey/modules/alt-ime.ahk
 !.config/autohotkey/modules/app.ahk
 !.config/autohotkey/modules/common.ahk
+!.config/autohotkey/modules/jis.ahk
 !.config/autohotkey/kems-ahk.ahk
+!.config/autohotkey/kems-ahk-jis.ahk
 !.config/azuredatastudio/User/settings.json
 !.config/brewfile/Brewfile
 !.config/crossnote/style.less
@@ -42,6 +44,7 @@
 !.config/zsh/.zshrc
 !.config/zsh/alias.zsh
 !.config/zsh/env.zsh
+!.config/zsh/local.zsh.example
 !.config/zsh/option.sync.zsh
 !.config/zsh/theme.sync.zsh
 

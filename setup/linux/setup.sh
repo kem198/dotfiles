@@ -30,7 +30,7 @@ function init {
     : Clone dotfiles
     local DOTFILES_HOME=${HOME}/dotfiles
     if [ ! -d "${DOTFILES_HOME}" ]; then
-        git clone https://github.com/kenkenpa198/dotfiles.git "${DOTFILES_HOME}" --recursive
+        git clone https://github.com/kem198/dotfiles.git "${DOTFILES_HOME}" --recursive
     else
         git -C "${DOTFILES_HOME}" pull origin main
         git -C "${DOTFILES_HOME}" submodule update --init --recursive

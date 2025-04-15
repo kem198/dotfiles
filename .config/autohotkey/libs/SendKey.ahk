@@ -1,6 +1,5 @@
 #Requires AutoHotkey v2.0
 
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; SendKey 関数
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -10,7 +9,7 @@
 ; https://egg.5ch.net/test/read.cgi/software/1644313099/
 ; >>770
 
-SendKey(str){
+SendKey(str) {
     Send("{Blind}" str)
     Sleep(5)
 

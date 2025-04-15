@@ -6,7 +6,7 @@ set -euo pipefail # エラーや未定義の変数が呼び出された場合プ
 # archive-commit-diff
 ###################################
 # 指定した Git コミット間の差分ファイルを ZIP 形式で出力するシェルスクリプトコマンド
-# 旧リポジトリ: https://github.com/kenkenpa198/archive-commit-diff
+# 旧リポジトリ: https://github.com/kem198/archive-commit-diff
 
 # 参考文献
 # - [Gitで差分ファイルを抽出+zipファイル化する方法 | 株式会社グランフェアズ](https://www.granfairs.com/blog/staff/git-archivediff)

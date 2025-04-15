@@ -5,11 +5,10 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 #Include ../libs/SendKey.ahk
 
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Excel
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 #HotIf WinActive("ahk_exe excel.exe")
-    ^Tab::Send "^{PgDn}"  ; Ctrl + Tab
-    +^Tab::Send "^{PgUp}" ; Shift + Ctrl + Tab
+^Tab:: Send "^{PgDn}"  ; Ctrl + Tab
++^Tab:: Send "^{PgUp}" ; Shift + Ctrl + Tab
 #HotIf

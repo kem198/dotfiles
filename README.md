@@ -2,7 +2,7 @@
 # dotfiles
 
 ```shell
-curl -fsSL https://raw.githubusercontent.com/kenkenpa198/dotfiles/main/setup/linux/setup.sh | bash
+curl -fsSL https://raw.githubusercontent.com/kem198/dotfiles/main/setup/linux/setup.sh | bash
 ```
 
 <!-- omit in toc -->
@@ -39,7 +39,7 @@ sudo apt-get install -y curl
 sudo apt-get install -y git
 
 # セットアップ用スクリプトを実行する
-curl -fsSL https://raw.githubusercontent.com/kenkenpa198/dotfiles/main/setup/linux/setup.sh | bash
+curl -fsSL https://raw.githubusercontent.com/kem198/dotfiles/main/setup/linux/setup.sh | bash
 ```
 
 ### Arch Linux
@@ -59,7 +59,7 @@ sudo pacman -S --noconfirm curl
 sudo pacman -S --noconfirm git
 
 # セットアップ用スクリプトを実行する
-curl -fsSL https://raw.githubusercontent.com/kenkenpa198/dotfiles/main/setup/linux/setup.sh | bash
+curl -fsSL https://raw.githubusercontent.com/kem198/dotfiles/main/setup/linux/setup.sh | bash
 ```
 
 ### Windows and WSL
