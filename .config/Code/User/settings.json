@@ -47,6 +47,9 @@
   },
   "markdown.extension.list.indentationSize": "inherit",
 
+  // remote
+  "remote.autoForwardPortsSource": "hybrid",
+
   // search
   "search.showLineNumbers": true,
 
@@ -155,6 +158,11 @@
     "xremap",
     "zundamon"
   ],
+
+  // github
+  "github.copilot.enable": {
+    "*": false
+  },
 
   // gitlens
   "gitlens.currentLine.format": "${author, }${agoOrDateShort}${' via 'pullRequest}${ // message|50?}",
