@@ -1,9 +1,7 @@
 ########################################
 # alias
 ########################################
-alias wip='cd ~/dotfiles && \
-echo "Working directory:\n$(pwd)" && echo && \
-echo "Current Branch:\n$(git branch --show-current)"'
+alias wip='cd ~/dotfiles && echo "Working directory:" && pwd && echo && echo "Current Branch:" && git branch --show-current'
 
 alias wip2='cd ~/works/develop && \
 echo "Working directory:\n$(pwd)" && echo && \
