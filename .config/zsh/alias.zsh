@@ -25,7 +25,7 @@ show-env-ver() {
 alias dot='cd ~/dotfiles'
 alias dev='cd ~/works/repos/dev'
 alias note='cd ~/works/notes'
-alias pj='cd ~/works/projects'
+alias pj='cd ~/works/repos/pj'
 alias gr='cd "$(git rev-parse --show-toplevel)"'
 
 # clear
