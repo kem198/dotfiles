@@ -75,6 +75,7 @@ function make_dir {
 
     # My directory
     mkdir -p ~/works/repos/dev
+    mkdir -p ~/works/repos/pj
 }
 
 
