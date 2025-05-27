@@ -74,7 +74,7 @@ function make_dir {
     mkdir -p "$XDG_STATE_HOME/zsh/"
 
     # My directory
-    mkdir -p ~/works/develop
+    mkdir -p ~/works/repos/dev
 }
 
 
