@@ -139,13 +139,12 @@ alias dp='code-dependency --source ./'
 ########################################
 # Docker
 ########################################
-alias dcst='sudo service docker status'                              # Docker デーモンの起動状況を確認
-alias dcsta='sudo service docker start ; sudo service docker status' # Docker デーモンを起動
-alias dcsto='sudo service docker stop ; sudo service docker status'  # Docker デーモンを停止
+alias dst='sudo service docker status'                              # Docker デーモンの起動状況を確認
+alias dsta='sudo service docker start ; sudo service docker status' # Docker デーモンを起動
+alias dsto='sudo service docker stop ; sudo service docker status'  # Docker デーモンを停止
 
-alias dc='docker'
-alias dcc='docker compose'
-alias dcrmn='docker image prune -f' # <none> イメージを一括削除 https://codechord.com/2019/08/docker-images-none-dangling/
+alias drmn='docker image prune -f' # <none> イメージを一括削除 https://codechord.com/2019/08/docker-images-none-dangling/
+alias dcrst='docker compose down -v && docker compose up -d --build && docker compose logs -f'
 
 
 ########################################
