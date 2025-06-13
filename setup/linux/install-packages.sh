@@ -43,7 +43,6 @@ function main {
         "curl"
         "git"
         "jq"
-        "neofetch"
         "pwgen"
         "patch"
         "translate-shell"
@@ -85,6 +84,7 @@ function main {
         : add packages for apt
         local packages+=(
             "build-essential"
+            "neofetch"
             "openssh-server"
             "software-properties-common"
         )
