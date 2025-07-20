@@ -163,6 +163,7 @@
   "github.copilot.enable": {
     "*": false
   },
+  "github.copilot.nextEditSuggestions.enabled": true,
 
   // gitlens
   "gitlens.currentLine.format": "${author, }${agoOrDateShort}${' via 'pullRequest}${ // message|50?}",
@@ -205,8 +206,11 @@
   // prettier
   // "prettier.singleQuote": true,
 
-  // sql-formatter
-  "sql-formatter.uppercase": true,
+  // Prettier-SQL
+  "Prettier-SQL.expressionWidth": 50,
+  "Prettier-SQL.keywordCase": "upper",
+  "Prettier-SQL.newlineBeforeSemicolon": true,
+  "Prettier-SQL.SQLFlavourOverride": "postgresql",
 
   // trailing-spaces
   "trailing-spaces.backgroundColor": "rgba(255,255,0,0.3)",
