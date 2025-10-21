@@ -144,6 +144,8 @@
     "rgba",
     "Roboto",
     "ryusei",
+    "shadcn",
+    "shadcnui",
     "shortcodes",
     "tailwindcss",
     "Tileset",
@@ -264,6 +266,7 @@
   },
   "[markdown]": {
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "editor.tabSize": 4,
     "files.trimTrailingWhitespace": false
   },
   "[prisma]": {
@@ -282,5 +285,7 @@
   "[typescriptreact]": {
     "editor.tabSize": 2,
     "editor.insertSpaces": true
-  }
+  },
+  "mdb.mcp.server": "prompt",
+  "playwright.reuseBrowser": true
 }
