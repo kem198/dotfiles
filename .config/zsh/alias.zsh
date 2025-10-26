@@ -71,6 +71,9 @@ alias hg='history -800 | grep'
 alias ll='ls -lhG --file-type --color=auto --time-style=long-iso --group-directories-first'
 alias lla='ls -alhG --file-type --color=auto --time-style=long-iso --group-directories-first'
 
+# pwd
+pwdh() { [[ "$PWD" == "$HOME"* ]] && echo "~${PWD#$HOME}" || echo "$PWD"; }
+
 # seq
 alias seq100='seq -w 1 100' # 001 ～ 100 を表示
 
