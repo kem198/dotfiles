@@ -5,6 +5,7 @@ function main {
     # インストールするアプリケーションのハッシュテーブルを定義
     $APPS = @(
         '7zip.7zip'
+        'AntibodySoftware.WizTree'
         'Amazon.Kindle'
         'Apple.iTunes'
         'AutoHotkey.AutoHotkey'
