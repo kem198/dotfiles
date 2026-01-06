@@ -172,7 +172,6 @@
             "yellow": "#E5C07B"
         }
     ],
-    "startOnUserLogin": true,
     "tabSwitcherMode": "disabled",
     "themes": [],
     "windowingBehavior": "useAnyExisting"
