@@ -1,3 +1,72 @@
+/* ==========================
+   リセット CSS
+   ==========================
+*/
+:root {
+  --yt-chat-bg: transparent;
+  --yt-chat-text: #000;
+  --yt-chat-muted: rgba(255, 255, 255, 0.75);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html,
+body,
+yt-live-chat-renderer,
+#chat-messages {
+  background: transparent !important;
+  color: var(--yt-chat-text) !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+img,
+svg,
+yt-img-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: none;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+yt-live-chat-text-message-renderer,
+yt-live-chat-item-renderer {
+  background: transparent !important;
+  border: none !important;
+  padding: 4px 6px;
+}
+
+yt-live-chat-text-message-renderer *,
+yt-live-chat-item-renderer * {
+  background: transparent !important;
+  color: inherit !important;
+}
+
+/* ==========================
+   カスタム CSS
+   ==========================
+*/
 * {
   font-family: "Noto Sans JP";
   font-weight: 500;
@@ -19,7 +88,7 @@ yt-live-chat-item-renderer .chat-line__avatar {
   border: 1px solid orange;
 }
 
-/* コメント投稿者とコメント本文のボックス */
+/* コメント投稿者、コメント本文、バッジのボックス */
 yt-live-chat-text-message-renderer #content,
 yt-live-chat-item-renderer #content,
 yt-live-chat-text-message-renderer div#content,
