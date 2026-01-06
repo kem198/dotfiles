@@ -5,6 +5,9 @@
   // diffEditor
   "diffEditor.ignoreTrimWhitespace": false,
 
+  // chat
+  "chat.viewSessions.orientation": "stacked",
+
   // editor
   "editor.copyWithSyntaxHighlighting": false,
   "editor.cursorSurroundingLines": 16,
