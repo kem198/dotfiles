@@ -1,153 +1,46 @@
-/*
-  カスタム YouTube チャット CSS（新規ファイル）
-  - 完全に新しい内容（配布ファイルは変更しないでください）
-  - レイアウト:
-    * 投稿者行: アイコン + ユーザー名（横並び）
-    * コメント: ユーザー名の下に本文（縦並び）
-  - デバッグ用の境界線: コンテナ = 赤, 投稿者 = 緑, メッセージ = 青
-*/
+* {
+  font-family: "Noto Sans JP";
+  font-weight: 500;
+}
 
-/* 各コメント行（外側） */
+/* 各チャット行 */
 yt-live-chat-text-message-renderer,
 yt-live-chat-item-renderer {
-  display: block !important;
-  position: relative !important;
-  padding: 8px !important;
-  margin: 6px 0 !important;
-  box-sizing: border-box !important;
-  border-radius: 0 !important;
-  background: transparent !important;
+  border: 1px solid red;
 }
 
-/* 投稿者行: アイコン＋名前（横並び） */
-yt-live-chat-text-message-renderer yt-live-chat-author-chip,
-yt-live-chat-item-renderer yt-live-chat-author-chip {
-  display: flex !important;
-  align-items: center !important;
-  gap: 8px !important;
-  padding: 4px 6px !important;
-  border-radius: 0 !important;
-  background: rgba(0, 0, 0, 0.15) !important;
-}
-
-/* 投稿者のアバター / 写真 */
+/* アイコン */
+yt-live-chat-text-message-renderer yt-img-shadow,
+yt-live-chat-item-renderer yt-img-shadow,
 yt-live-chat-text-message-renderer yt-img-shadow#author-photo,
-yt-live-chat-text-message-renderer #author-photo,
 yt-live-chat-item-renderer yt-img-shadow#author-photo,
-yt-live-chat-item-renderer #author-photo,
-.chat-line__avatar,
-.chat-line__avatar img {
-  display: inline-block !important;
-  width: 36px !important;
-  height: 36px !important;
-  border-radius: 50% !important;
-  overflow: hidden !important;
-  object-fit: cover !important;
-  margin: 0 !important;
+yt-live-chat-text-message-renderer .chat-line__avatar,
+yt-live-chat-item-renderer .chat-line__avatar {
+  border: 1px solid orange;
 }
 
-/* 投稿者名: アイコンの右、本文の上に表示 */
-yt-live-chat-text-message-renderer #author-name,
-yt-live-chat-item-renderer #author-name {
-  display: inline-block !important;
-  font-weight: 700 !important;
-  font-size: 18px !important;
-  color: #ffffff !important;
-  background: rgba(0, 0, 0, 0.5) !important;
-  padding: 4px 8px !important;
-  border-radius: 0 !important;
+/* コメント投稿者とコメント本文のボックス */
+yt-live-chat-text-message-renderer #content,
+yt-live-chat-item-renderer #content,
+yt-live-chat-text-message-renderer div#content,
+yt-live-chat-item-renderer div#content {
+  border: 1px solid green;
 }
 
-/* 吹き出し（投稿者行の下） */
+/* コメント投稿者 */
+yt-live-chat-text-message-renderer yt-live-chat-author-chip,
+yt-live-chat-item-renderer yt-live-chat-author-chip,
+.yt-live-chat-author-chip,
+.chat-line__author {
+  border: 1px solid blue;
+}
+
+/* コメント本体 */
 yt-live-chat-text-message-renderer #message,
 yt-live-chat-text-message-renderer .chat-line__message,
 yt-live-chat-item-renderer #message,
-yt-live-chat-item-renderer .chat-line__message {
-  display: block !important;
-  margin-top: 8px !important;
-  padding: 10px 14px !important;
-  background: rgba(0, 0, 0, 0.7) !important;
-  color: #fff !important;
-  border-radius: 0 !important;
-  max-width: calc(100% - 20px) !important;
-  box-sizing: border-box !important;
-}
-
-/* 補助: タイムスタンプやバッジがレイアウトを崩さないように */
-yt-live-chat-text-message-renderer #timestamp,
-yt-live-chat-text-message-renderer #chat-badges,
-yt-live-chat-item-renderer #timestamp,
-yt-live-chat-item-renderer #chat-badges {
-  display: inline-block !important;
-  margin-left: 8px !important;
-  vertical-align: middle !important;
-}
-
-/* アイコンとユーザー名を横並びにする（複数パターンに対応） */
-yt-live-chat-text-message-renderer .yt-live-chat-author-chip,
-yt-live-chat-text-message-renderer .chat-line__author,
-yt-live-chat-text-message-renderer yt-live-chat-author-renderer,
-.yt-live-chat-author-chip,
-.chat-line__author,
-yt-live-chat-author-renderer {
-  display: flex !important;
-  align-items: center !important;
-  gap: 8px !important;
-}
-
-/* デバッグ: ネストしたボックスの境界色を変更（末尾のまとめブロックを参照） */
-
-/* =========================================================
-  OBS 用クリーンアップ: ヘッダ、入力欄、ティッカーなどの UI を非表示
-  OBS のオーバーレイでは不要な要素を隠します。
-  ========================================================= */
-yt-live-chat-header-renderer,
-.stream-chat-header,
-.tw-z-default,
-.chat-input,
-.chat-line__status,
-yt-live-chat-message-input-renderer,
-yt-live-chat-ticker-renderer,
-yt-live-chat-mode-change-message-renderer,
-yt-live-chat-viewer-engagement-message-renderer,
-div#reaction-control-panel-overlay.yt-live-chat-renderer,
-div#separator.yt-live-chat-renderer,
-div#lower-bumper.yt-live-chat-paid-message-renderer,
-#panel-pages {
-  display: none !important;
-}
-
-/* OBS 用: コンテナ / 背景を透過にする */
-yt-live-chat-renderer,
-yt-live-chat-item-list-renderer,
-#items,
-yt-live-chat-text-message-renderer,
-yt-live-chat-item-renderer {
-  background: transparent !important;
-  box-shadow: none !important;
-}
-
-/* アクセシビリティ調整 */
-yt-live-chat-text-message-renderer,
-yt-live-chat-item-renderer {
-  color-adjust: exact;
-}
-
-/* ---------------------------------------------------------
-   デバッグ境界線（有効）
-   - 現在表示されるように有効化しています。不要ならこのブロックをコメント化してください。
-   --------------------------------------------------------- */
-yt-live-chat-text-message-renderer,
-yt-live-chat-item-renderer {
-  border: 1px solid red !important; /* コンテナ */
-}
-
-yt-live-chat-text-message-renderer yt-live-chat-author-chip,
-yt-live-chat-item-renderer yt-live-chat-author-chip {
-  border: 1px solid green !important; /* 投稿者 */
-}
-
-yt-live-chat-text-message-renderer #message,
-yt-live-chat-item-renderer #message {
-  border: 1px solid blue !important; /* メッセージ */
+yt-live-chat-item-renderer .chat-line__message,
+yt-live-chat-text-message-renderer yt-formatted-string,
+yt-live-chat-item-renderer yt-formatted-string {
+  border: 1px solid purple;
 }
