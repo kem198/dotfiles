@@ -41,7 +41,9 @@
 !.config/sheldon/plugins.toml
 !.config/systemd/user/xremap.service.example
 !.config/xremap/config.yml
-!.config/youtube/css4obs.txt
+!.config/web/stylus/discord.com.css
+!.config/web/stylus/universal.css
+!.config/web/youtube/live/css4obs.txt
 !.config/zsh/.zshrc
 !.config/zsh/alias.zsh
 !.config/zsh/env.zsh
