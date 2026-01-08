@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap");
+
+body,
+html,
+div,
+span,
+p,
+a,
+li,
+ul,
+ol,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+footer,
+nav,
+main,
+section,
+article,
+aside,
+label,
+button,
+input,
+textarea,
+select,
+.btn,
+.button,
+.text,
+.anchor,
+.link {
+  font-family: "Noto Sans JP", sans-serif !important;
+}
+
+table,
+th,
+td,
+caption,
+tr {
+  font-family: "Noto Sans JP", sans-serif !important;
+}
+
+a,
+a * {
+  font-family: "Noto Sans JP", sans-serif !important;
+}
+
+span,
+strong,
+em,
+b,
+i {
+  font-family: "Noto Sans JP", sans-serif !important;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace !important;
+}

@@ -1,0 +1,16 @@
+@import url("fonts.googleapis.com");
+
+/* 全ての要素に対してフォントを適用 */
+*:not([class*="code"]),
+*:not(code),
+*:not(pre) {
+  font-family: "Noto Sans JP", sans-serif !important;
+}
+
+/* Discord 独自の変数用 (Variable) */
+:root {
+  --font-primary: "Noto Sans JP", sans-serif !important;
+  --font-display: "Noto Sans JP", sans-serif !important;
+  --font-headline: "Noto Sans JP", sans-serif !important;
+  --font-code: Consolas, Liberation Mono, Menlo, Courier, monospace !important;
+}
