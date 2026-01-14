@@ -36,9 +36,9 @@ function main {
     # $linkHash['~\GoogleDrive\Documents\Files'] = '~\Documents\Files'
 
     # works
-    $linkHash['~\GoogleDrive\works\create'] = '~\works\create'
-    # $linkHash['~\GoogleDrive\works\notes']  = '~\works\notes'
-    $linkHash['~\GoogleDrive\works\others'] = '~\works\others'
+    $linkHash['~\GoogleDrive\kenkenpa198\works\create'] = '~\works\create'
+    # $linkHash['~\GoogleDrive\kenkenpa198\works\notes']  = '~\works\notes'
+    $linkHash['~\GoogleDrive\kenkenpa198\works\workbench'] = '~\works\workbench'
 
 
     ########################################
