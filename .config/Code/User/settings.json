@@ -31,7 +31,7 @@
   "explorer.sortOrderLexicographicOptions": "unicode",
 
   // extensions
-  "extensions.autoUpdate": "onlyEnabledExtensions",
+  "extensions.autoUpdate": "on",
 
   // files
   "files.autoGuessEncoding": true,
@@ -43,8 +43,8 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
 
-  // javascript
-  "javascript.updateImportsOnFileMove.enabled": "always",
+  // js/ts
+  "js/ts.updateImportsOnFileMove.enabled": "always",
 
   // markdown
   "markdown.copyFiles.destination": {
