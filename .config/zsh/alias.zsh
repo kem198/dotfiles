@@ -21,6 +21,25 @@ show-env-ver() {
     fi
 }
 
+catf() {
+  local output
+
+  output=$(
+    find "$1" -type f | sort | while read file; do
+      echo "===== $file ====="
+      echo '```'
+      cat "$file"
+      echo '```'
+      echo
+    done
+  )
+
+  printf '%s\n' "$output"
+  printf '%s\n' "$output" | clip.exe
+  echo
+  echo Copied!
+}
+
 # cd
 alias dot='cd ~/dotfiles'
 alias dev='cd ~/works/repos/dev'
