@@ -84,7 +84,6 @@ function main {
         : add packages for apt
         local packages+=(
             "build-essential"
-            "neofetch"
             "openssh-server"
             "software-properties-common"
         )
