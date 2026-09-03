@@ -9,27 +9,27 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Change right side keys
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; ; ¥ で Backspace を送信
-; sc07D:: SendKey("{BS}")
+; ¥ で Backspace を送信
+sc07D:: SendKey("{BS}")
 
-; ; \ で右の Shift を送信
-; sc073:: SendKey("{RShift down}")
-; sc073 up:: SendKey("{RShift up}")
+; \ で右の Shift を送信
+sc073:: SendKey("{RShift down}")
+sc073 up:: SendKey("{RShift up}")
 
-; sc02B:: {
-;     if (GetKeyState("Shift", "P")) {
-;         ; Shift + ] で Shift + Enter を送信
-;         Send("+{Enter}")
-;     } else {
-;         ; ] で Enter を送信
-;         Send("{Enter}")
-;     }
-; }
+sc02B:: {
+    if (GetKeyState("Shift", "P")) {
+        ; Shift + ] で Shift + Enter を送信
+        Send("+{Enter}")
+    } else {
+        ; ] で Enter を送信
+        Send("{Enter}")
+    }
+}
 
-; ; F13 + ] でバックスラッシュを送信
-; #HotIf GetKeyState("F13", "P")
-; sc02B:: SendKey("\")
-; #HotIf
+; F13 + ] でバックスラッシュを送信
+#HotIf GetKeyState("F13", "P")
+sc02B:: SendKey("\")
+#HotIf
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Switch IME
