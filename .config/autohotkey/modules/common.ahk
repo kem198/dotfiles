@@ -100,3 +100,18 @@ F13 & Space::
 F13 & t:: SendKey("^t") ; fzf-file-widget
 F13 & r:: SendKey("^r") ; fzf-history-widget
 F13 & c:: SendKey("!c") ; fzf-cd-widget
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Disable
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Disable Windows Magnifier shortcuts
+#=:: return
+#+=:: return   ; Win + + (US keyboard: Shift + =)
+#-:: return
+#Esc:: return
+
+; Optional: disable Ctrl+Alt variants too
+^!i:: return
+^!m:: return
+^!r:: return
+^!l:: return
