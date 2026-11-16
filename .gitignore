@@ -37,6 +37,7 @@
 !.config/git/config
 !.config/git/ignore
 !.config/git/local.example
+!.config/pwsh/clear-shader-cache.ps1
 !.config/sheldon/plugins.toml
 !.config/systemd/user/xremap.service.example
 !.config/xremap/config.yml
